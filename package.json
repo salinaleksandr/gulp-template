@@ -1,0 +1,19 @@
+{
+  "name": "Gulp_project",
+  "version": "1.0.0",
+  "description": "Gulp template for html+js+css apps",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "browser-sync": "^2.11.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.1.1",
+    "gulp-uglify": "^1.5.1",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^4.2.0",
+    "rimraf": "^2.5.0",
+    "node-bourbon": "^4.2.3"
+  }
+}

@@ -1,0 +1,17 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+composer.phar
+composer.lock
+.DS_Store
+*.map
+Thumbs.db
+*.sass-cache
+*.css.map
+/app/config/local/*
+/.sass-cache
+/example
+/public/uploads
+/node-packages
