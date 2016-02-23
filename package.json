@@ -11,6 +11,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^2.1.1",
     "gulp-plumber": "^1.1.0",
+    "gulp-uncss": "^1.0.4",
     "gulp-uglify": "^1.5.1",
     "gulp-watch": "^4.3.5",
     "imagemin-pngquant": "^4.2.0",
