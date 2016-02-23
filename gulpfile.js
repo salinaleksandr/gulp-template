@@ -1,17 +1,18 @@
 'use strict';
 
 var gulp = require('gulp'),
-watch = require('gulp-watch'),
-prefixer = require('gulp-autoprefixer'),
-uglify = require('gulp-uglify'),
-sass = require('gulp-sass'),
-rigger = require('gulp-rigger'),
-cssmin = require('gulp-minify-css'),
-imagemin = require('gulp-imagemin'),
-pngquant = require('imagemin-pngquant'),
-rimraf = require('rimraf'),
-browserSync = require("browser-sync"),
-reload = browserSync.reload;
+    watch = require('gulp-watch'),
+    prefixer = require('gulp-autoprefixer'),
+    uglify = require('gulp-uglify'),
+    sass = require('gulp-sass'),
+    plumber = require('gulp-plumber'),
+    rigger = require('gulp-rigger'),
+    cssmin = require('gulp-minify-css'),
+    imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
+    rimraf = require('rimraf'),
+    browserSync = require("browser-sync"),
+    reload = browserSync.reload;
 
 var path = {
     build: {
@@ -78,6 +79,7 @@ gulp.task('js:build', function () {
 
 gulp.task('style:build', function () {
     gulp.src(path.src.style) 
+        .pipe(plumber())
         .pipe(sass({
             includePaths: require('node-bourbon').includePaths,
             outputStyle: 'compressed',
